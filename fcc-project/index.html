@@ -12,24 +12,46 @@
     <p id="description">Respond each and every question without being a moron!</p>
     <form id="survey-form">
         <section id="basic-info">
-            <label for="name" id="name-label">Name <input id="name" type="text" placeholder="Enter your name" required></label>
-            <label for="email" id="email-label">Email <input id="email" type="email" placeholder="Enter your email" required></label>
-            <label for="number" id="number-label">Age (optional) <input id="number" type="number" placeholder="Age" min="10" max="120" required></label>
-            <label for="dropdown" id="dropdown-label">What best describes your current situation?</label>
-            <select id="dropdown">
-                <option>Select one (be honest)</option>
-                <option value="1">Still a Momy's boy (Living with my parents)</option>
-                <option value="2">I moved out but I can't even pay my food (making less than 100K/year)</option>
-                <option value="3">I am a grown man but if a enter in business I shit myself (making money but no personal foundation)</option>
-                <option value="4">I already completed every step of "QLA for Dummies" but haven't got the balls to pull the trigger</option>
-                <option value="5">I have a business and want to take the whole world</option>
-            </select>
+            <div>
+                <label for="name" id="name-label">Name <input id="name" type="text" placeholder="Enter your name" required></label>
+                <label for="email" id="email-label">Email <input id="email" type="email" placeholder="Enter your email" required></label>
+                <label for="number" id="number-label">Age (optional) <input id="number" type="number" placeholder="Age" min="10" max="120" required></label>
+            </div>
+            <div>
+                <label for="dropdown" id="dropdown-label">What best describes your current situation?</label>
+                <select id="dropdown">
+                    <option>Select one (be honest)</option>
+                    <option value="1">Still a Momy's boy (Living with my parents)</option>
+                    <option value="2">I moved out but I can't even pay my food (making less than 100K/year)</option>
+                    <option value="3">I am a grown man but if a enter in business I shit myself (making money but no personal foundation)</option>
+                    <option value="4">I already completed every step of "QLA for Dummies" but haven't got the balls to pull the trigger</option>
+                    <option value="5">I have a business and want to take the whole world</option>
+                </select>
+            </div>
         </section>
         <section id="other-info">
-            <p>If somebody spits on your mother's face while you were walking on the streer withe her, what would you do?</p>
-            <label for="radio1"><input id="radio1" class="input-radio" type="radio" name="mother-question" checked> Nothing, keep walking</label>
-            <label for="radio2"><input id="radio2" class="input-radio" type="radio" name="mother-question"> Ask for the mental state of the person who spitted to know what was he thinking</label>
-            <label for="radio3"><input id="radio3" class="input-radio" type="radio" name="mother-question"> Hit him until one of us is unconscious.</label>
+            <div>
+                <p>If somebody spits on your mother's face while you were walking on the streer withe her, what would you do?</p>
+                <label for="radio1"><input id="radio1" class="input-radio" type="radio" name="mother-question" checked> Nothing, keep walking</label>
+                <label for="radio2"><input id="radio2" class="input-radio" type="radio" name="mother-question"> Ask for the mental state of the person who spitted to know what was he thinking</label>
+                <label for="radio3"><input id="radio3" class="input-radio" type="radio" name="mother-question"> Hit him until one of us is unconscious.</label>
+            </div>
+            <div>
+                <p>What exactly you think you want to learn/improve in the QLA Castle Seminar? (Check all that apply)</p>
+                <label for="checkbox1"><input type="checkbox" class="input-checkbox" id="checkbox1"> My personal foundation</label>
+                <label for="checkbox2"><input type="checkbox" class="input-checkbox" id="checkbox2"> The underlying principles of High Performance</label>  
+                <label for="checkbox3"><input type="checkbox" class="input-checkbox" id="checkbox3"> How works the mind and soul of Super Successful leaders</label>  
+                <label for="checkbox4"><input type="checkbox" class="input-checkbox" id="checkbox4"> Want to learn how the World Economics are being transformed by QLA</label>  
+                <label for="checkbox5"><input type="checkbox" class="input-checkbox" id="checkbox5"> Learn how to exponentially grow my business through External Growth (Deals and Acquisitions)</label>  
+                <label for="checkbox6"><input type="checkbox" class="input-checkbox" id="checkbox6"> Improve/Learn my Deal Flow Perfection</label>
+            </div>
+            <div>
+                <p>Any other stuff you want to tell us?</p>
+                <textarea class="input-textarea" name="comments" placeholder="Enter additional information we should know..."></textarea>
+            </div>
+            <div>
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
         </section>
     </form>
 </body>
